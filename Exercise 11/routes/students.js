@@ -85,6 +85,7 @@ router.get("/:id", async (req, res) => {
 //  更新特定學生資料
 // =============================
 router.put("/:id", async (req, res) => {
+  console.log("PUT body =", req.body);
   try {
     const { name, age, grade } = req.body;
 
